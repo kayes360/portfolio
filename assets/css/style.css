@@ -1023,3 +1023,33 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Custom Scroll Bar
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background: hsl(148, 100%, 56%);
+  border-radius: 100vw;
+  margin-block: .5em; 
+}
+::-webkit-scrollbar {
+  width: 1rem;
+  background: hsl(147, 80%, 29%);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(118,255,0,1) 0%, rgba(0,255,126,1) 100%);
+  border: .10em solid hsl(0, 0%, 100%);
+  border-radius: 100vw;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 36%, rgba(30,209,132,1) 95%);
+} */
+@supports(scrollbar-color: red blue){
+  * {
+      scrollbar-color: linear-gradient(180deg, rgba(118,255,0,1) 0%, rgba(0,255,126,1) 100%); hsl(148, 100%, 56%);
+      scrollbar-width: auto;
+  }
+}
