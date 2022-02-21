@@ -1059,3 +1059,6 @@ section .container {
 .portfolio-links i:hover{
   color: #7bffb9;
 }
+i.bxs-ghost{
+  color: #7bffb9;
+}
