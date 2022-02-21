@@ -1053,3 +1053,9 @@ section .container {
       scrollbar-width: auto;
   }
 }
+.portfolio-links i{
+  color: #00aa4f;
+}
+.portfolio-links i:hover{
+  color: #7bffb9;
+}
