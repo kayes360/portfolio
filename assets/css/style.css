@@ -1062,3 +1062,30 @@ section .container {
 i.bxs-ghost{
   color: #7bffb9;
 }
+h2.parent{
+  display: inline-flex;
+}
+.type{
+  padding: 0px 10px;
+}
+/* .type{
+  height: 1.2em;
+  width: 0%;
+  overflow: hidden;
+  word-break: break-all;
+  animation: txt 0.5s infinite steps(1),
+  line 3s linear infinite alternate;
+}
+@keyframes line{
+  90%, 100%{
+    width: 70%;
+  }
+}
+@keyframes txt{
+  0%, 100%{
+    box-shadow: 5px 0 0 #0000;
+  }
+  50%{
+    box-shadow: 5px 0 0 #e7eb14;
+  }
+} */

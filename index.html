@@ -25,6 +25,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
+   
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -38,10 +39,32 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html">Imrul Kayes</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Front end developer and novitiate /UI/UX </span> from Bangladesh</h2>
+      <h1><a href="index.html">Imrul Kayes</a></h1> 
+
+      <style> 
+      
+      .animate-typing { 
+        font-weight: bold;
+        text-align: center; 
+        padding: 0 10px;
+      }
+          
+      </style>
+     
+      <h2 class="parent">I'm a passionate
+        <span
+        class="animate-typing"
+        data-animate-loop="true"
+        data-type-speed="200"
+        data-type-delay="200"
+        data-remove-speed="50"
+        data-remove-delay="500"
+        data-cursor-speed="200"
+      >
+       Front end developer and novitiate UI/UX Designer 
+      </span>
+        <br> 
+      </h2> 
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -91,7 +114,7 @@
                 
                 <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+8801521330289</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Uttara, Dhaka</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Uttara, Dhaka, Bangladesh</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Fulltime:</strong> <span>Available</span></li>
               </ul>
             </div>
@@ -686,6 +709,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/jquery.animateTyping.js"></script>
 </body>
 
 </html>
