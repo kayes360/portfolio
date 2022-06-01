@@ -10,11 +10,20 @@ body {
   position: relative;
   background: transparent;
 }
+/* .background-image{
+ 
+  height: 100vh;
+  width:1366px; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+} */
 body::before {
   content: "";
-  position: fixed;
   background: #040404 url("../img/bgp.png") top right no-repeat;
   background-size: cover;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -1040,7 +1049,7 @@ section .container {
   background: hsl(147, 80%, 29%);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(118,255,0,1) 0%, rgba(0,255,126,1) 100%);
+  background: linear-gradient(180deg, #000000, #686868  100%);
   border: .10em solid hsl(0, 0%, 100%);
   border-radius: 100vw;
 }
@@ -1049,7 +1058,7 @@ section .container {
 } */
 @supports(scrollbar-color: red blue){
   * {
-      scrollbar-color: linear-gradient(180deg, rgba(118,255,0,1) 0%, rgba(0,255,126,1) 100%); hsl(148, 100%, 56%);
+      scrollbar-color: linear-gradient(180deg, #000000, #686868  100%);
       scrollbar-width: auto;
   }
 }
@@ -1089,3 +1098,57 @@ h2.parent{
     box-shadow: 5px 0 0 #e7eb14;
   }
 } */
+ 
+
+@media ( hover: none ) {
+
+  .cursor {
+  
+    display: none !important;
+    
+    }
+  }
+
+* {
+
+  cursor: none;
+  
+  }
+
+.lazy-cursor {
+
+  --size: 70px;
+  
+  height: var( --size );
+  width: var( --size );
+   
+  pointer-events: none;
+  position: absolute;
+  transform: translate( -50%, -50% );
+  z-index: 99999999999;
+
+   
+  transition-duration: 200ms;
+  transition-timing-function: ease-out; 
+  transform: translate(-50%, -50%);   
+  border-radius: 10px; 
+  }
+
+  
+
+.lazy-cursor.cursor-dot {
+
+  background: #ffffff; /* This defines the color of the cursor */
+  mix-blend-mode: difference; /* Delete this line if you dont want the circle to invert */
+  transition: width 0.6s, height 0.6s, background-color 0.6s;
+  transition-timing-function: ease-out;
+  
+  }
+
+.cursor-dot.active {
+
+  --size: 50px;
+  
+  background-color: #ffffff;
+  
+  }

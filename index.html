@@ -34,7 +34,8 @@
 </head>
 
 <body>
-
+  <!-- background image -->
+    <!-- <img src="assets/img/bgp.png" class="background-image" alt=""> -->
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
@@ -693,9 +694,9 @@
       </form> -->
 
     </div>
-  </section><!-- End Contact Section -->
-
- 
+  </section><!-- End Contact Section --> 
+<div class="lazy-cursor"></div>
+  
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -710,7 +711,58 @@
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/jquery.animateTyping.js"></script>
+  <script src="assets/js/jquery.animateTyping.js"></script> 
+  <script>
+
+    $( ( ) => {
+    
+      $( 'body' ).prepend ( '<div class="lazy-cursor cursor-dot" style="left: 0px; top: 0px;">' );
+    
+      $( window ).mousemove ( function ( e ) {
+      
+        $( '.lazy-cursor' ).css ( {
+        
+          left: e.pageX,
+          top: e.pageY
+          
+          } );
+          
+        } );
+        
+      $( window ).mousemove ( function ( e ) {
+      
+        $( 'a' ).on ( 'mouseenter', function ( ) {
+          
+          $( '.lazy-cursor' ).addClass ( 'active' );
+          
+          } );
+          
+        } );
+        
+      $( window ).mousemove ( function ( e ) {
+      
+        $( 'a' ).on ( 'mouseleave', function ( ) {
+        
+          $( '.lazy-cursor' ).removeClass ( 'active' );
+          
+          } );
+          
+        } );
+        
+      } );
+
+     
+    </script>
+   <script>
+    $(document).on('mousemove', (event) => {
+      
+    $('.lazy-cursor').css({
+      left: event.clientX,
+      top: event.clientY,
+    });
+      console.log('ok');
+  });
+  </script>
 </body>
 
 </html>
