@@ -1121,6 +1121,7 @@ h2.parent{
   
   height: var( --size );
   width: var( --size );
+  border-radius: 40px;
    
   pointer-events: none;
   position: absolute;
@@ -1130,8 +1131,7 @@ h2.parent{
    
   transition-duration: 200ms;
   transition-timing-function: ease-out; 
-  transform: translate(-50%, -50%);   
-  border-radius: 10px; 
+  transform: translate(-50%, -50%);    
   }
 
   
