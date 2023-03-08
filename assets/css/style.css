@@ -873,7 +873,7 @@ section .container {
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
 }
-.contact .info-box i.bx {
+.contact .info-box i.bx, .resume {
   font-size: 24px;
   color: #18d26e;
   border-radius: 50%;
@@ -1156,4 +1156,17 @@ h2.parent{
   .icon-box svg{
     height: 30px;
     width: 30px;
+  }
+
+  .resume-icon { 
+    fill:#18d26e;
+    height: 30px;
+    width: 30px;
+  }
+  .resume-icon-wrapper{ 
+    border-radius: 50%; 
+    background: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    width: 50px;
+    
   }
