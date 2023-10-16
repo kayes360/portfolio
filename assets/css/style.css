@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   transition: ease-in-out 0.3s;
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -498,6 +498,7 @@ section .container {
   margin: 10px 0 5px 45px;
   color: #fff;
 }
+
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
