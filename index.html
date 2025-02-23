@@ -12,10 +12,7 @@
     <!-- Favicons -->
     <link href="assets/img/favicon_io/android-chrome-192x192.png" rel="icon">
     <link href="assets/img/favicon_io/android-chrome-192x192.png" rel=" apple-touch-icon">
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+ 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,9 +24,16 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link  href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom-cursor.css" rel="stylesheet">
     <link href="assets/css/custom-scrollbar.css" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/combined-icons.css">
+        <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+        <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    </noscript>
 </head>
 
 <body>
@@ -54,12 +58,7 @@
             <div class="row">
                 <div class="col-12 col-md-6">
                     <h1><a href="index.html" class="fw-bold fs-1">Imrul Kayes</a></h1>
-                    <style>
-                        .animate-typing {
-                            font-weight: bold;
-                            text-align: center;
-                        }
-                    </style>
+                     
                     <div class="subtitle-container">
                         <h2 class="parent">
                             Frontend Developer
@@ -110,10 +109,10 @@
 
 
         </div>
-        <video autoplay muted loop playsinline>
+        <!-- <video autoplay muted loop playsinline preload="auto"  fetchpriority="high">
             <source src="/assets/img/bg-pixel.webm" type="video/webm">
             Your browser does not support the video tag.
-        </video>
+        </video> -->
     </section>
     <!-- End Header --> 
     <!-- ======= About Section ======= -->
@@ -127,7 +126,7 @@
 
             <div class="row">
                 <div class="col-lg-4" data-aos="fade-right">
-                    <img src="assets/img/mep.webp" class="img-fluid section-image" alt="" height=" ">
+                    <img src="assets/img/mep.webp" class="img-fluid section-image" alt="section-image" height="600" width="450" loading="lazy">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>Frontend Developer</h3>
@@ -693,7 +692,8 @@
                 <!-- dead end job (clone) -->
                 <div class="col-lg-4 col-md-6 portfolio-item filter-webpage-clone-one">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/dead-end-copy/dead_end_job_copy.webp" class="img-fluid" alt="">
+                        <img src="assets/img/portfolio/dead-end-copy/dead_end_job_copy.webp" class="img-fluid" alt="dead_end_copy" height="200" width="300" 
+                        loading="lazy">
                         <div class="portfolio-info">
                             <h2>Dead End Job (Clone Project) </h2>
                             <p>Dead End Webpage</p>
@@ -867,17 +867,23 @@
 
     <!-- Vendor JS Files -->
     <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer  src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script defer  src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script defer  src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script defer  src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <!-- <script src="assets/vendor/php-email-form/validate.js"></script> --> 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/navigation.js"></script> 
-    <script src="assets/js/jquery.js"></script>  
-    <script type="module" src="assets/js/cursordot.js"></script>  
+    <script defer  src="assets/js/main.js"></script>
+    <script defer  src="assets/js/navigation.js"></script> 
+    <script defer  src="assets/js/jquery.js"></script>  
+    <script defer  type="module" src="assets/js/cursordot.js"></script>  
+    <script>
+        // Add this inline in head
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
 </body>
 
 </html>
