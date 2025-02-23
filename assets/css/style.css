@@ -1098,4 +1098,11 @@ body {
     }
     
   
-   
+    .modal-dialog {
+        max-height: 90vh;
+        height: 90vh;
+    }
+
+    .modal-content,.modal-body {
+        height: 100%;
+    }

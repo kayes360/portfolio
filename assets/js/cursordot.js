@@ -22,7 +22,7 @@ const cursorDot = ({
   innerDot.style.left = "50%";
   innerDot.style.width = "10px";  // Adjust size of red dot
   innerDot.style.height = "10px";
-  innerDot.style.background = "red";
+  innerDot.style.background = "#18d26e";
   innerDot.style.borderRadius = "50%";
   innerDot.style.transform = "translate(-50%, -50%)";
   innerDot.style.opacity = "0"; // Initially hidden
@@ -108,10 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Add hover effect for nav-links (show red dot inside cursor)
-  cursor.over(".nav-link", { 
+  cursor.over(".nav-link, .resumeModalbutton", { 
     scale: 0.5,
     borderColor: "rgba(255,255,255,.38)",
     background: "transparent",
     innerDot: true  // Enable red dot on hover
   });
+  
 });
+

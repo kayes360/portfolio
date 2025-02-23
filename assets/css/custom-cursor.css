@@ -20,7 +20,7 @@
     left: 50%;
     width: 10px; /* Adjust size of the red dot */
     height: 10px;
-    background: red;
+    background: #fff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     opacity: 0; /* Initially hidden */
